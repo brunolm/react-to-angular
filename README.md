@@ -12,3 +12,4 @@ Do you know React and want to learn Angular (or even vice-versa)? This repo trie
 1. [forms](./guides/forms.md)
 1. [style-binding](./guides/style-binding.md)
 1. [attribute-binding](./guides/attribute-binding.md)
+1. [lifecycle](./guides/lifecycle.md)
