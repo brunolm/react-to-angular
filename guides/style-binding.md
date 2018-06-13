@@ -22,9 +22,9 @@ class Rocket extends React.Component {
       active: this.state.active,
     });
 
-    const sty = { backgroundColor: 'red' };
+    const sty = { backgroundColor: 'red' }; // or 'background-color'
 
-    return (<h1 className={classes} style={sty}>My rocket</h1>};
+    return (<h1 className={classes} style={sty}>My rocket</h1>);
   }
 }
 ```
@@ -37,7 +37,7 @@ Component:
 class RocketComponent {
   @Input() isNasa: boolean;
   active = true;
-  sty = { backgroundColor: 'red' }; // or 'background-color
+  sty = { backgroundColor: 'red' }; // or 'background-color'
 }
 ```
 
