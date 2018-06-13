@@ -35,6 +35,8 @@ class Rocket extends React.Component {
     }, {});
   }
 
+  // instead of `handleChange()` use `handleChange = () =>` to make `this` have the component context
+  // another option would be `.bind(this)` which is bad for performance
   handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -44,6 +46,8 @@ class Rocket extends React.Component {
     });
   }
 
+  // instead of `handleSubmit()` use `handleSubmit = () =>` to make `this` have the component context
+  // another option would be `.bind(this)` which is bad for performance
   handleSubmit = (e) => {
     e.preventDefault();
     const valid = Object.keys(this.errors).every((error) => !this.errors[error]);
