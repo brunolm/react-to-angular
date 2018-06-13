@@ -30,6 +30,18 @@ const flyingStatusBar = flying ? (<div>flying</div>) : undefined;
 return (<div>{flyingStatusBar}</div>);
 ```
 
+or
+
+```tsx
+return (
+  <div>
+    {flying &&
+      <div>flying</div>
+    }
+  </div>
+);
+```
+
 ## Angular
 
 Component:
@@ -51,6 +63,18 @@ Component template:
 <ng-template #three>
   <div>three</div>
 </ng-template>
+```
+
+or
+
+```html
+<div [ngSwitch]="value">
+  <div *ngSwitchCase="1">one</div>
+  <div *ngSwitchCase="2">two</div>
+  <div *ngSwitchCase="3">three</div>
+  <div *ngSwitchDefault>default</div>
+</div>
+
 ```
 
 ### Simple
