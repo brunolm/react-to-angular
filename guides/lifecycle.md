@@ -1,25 +1,29 @@
-# props
+# lifecycle
 
 ## React
 
-http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+https://twitter.com/dan_abramov/status/981712092611989509
 
-Mounting
+### Mounting
 
 ```ts
 constructor
+getDerivedStateFromProps
 render
 componentDidMount
 ```
 
-Updating
+### Updating
 
 ```ts
+getDerivedStateFromProps // new props only
+shouldComponentUpdate // new props or setState
 render
+getSnapshotBeforeUpdate
 componentDidUpdate
 ```
 
-Unmounting
+### Unmounting
 
 ```ts
 componentWillUnmount
